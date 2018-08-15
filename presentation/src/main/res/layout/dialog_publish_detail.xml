@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorDarkTransparentGray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="@string/live_end_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- 直播时长 -->
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/view_margin_40"
+        android:id="@+id/btn_cancel"
+        android:padding="5dp"
+        android:text="@string/btn_sure"
+        android:textSize="@dimen/title"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/btn_white_corner"
+        android:layout_width="245dp"
+        android:layout_height="46dp" />
+</RelativeLayout>

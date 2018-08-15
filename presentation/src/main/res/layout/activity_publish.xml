@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_play_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.src.isec.mvp.view.implement.activity.LivePlayerActivity"
+    tools:ignore="contentDescription">
+
+    <com.src.isec.widget.TCVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/rl_controllLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/rl_live_pusher_info"
+            layout="@layout/include_live_pusher_info"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+
+        <include
+            android:id="@+id/rl_live_user_list"
+            layout="@layout/include_live_user_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/rl_live_pusher_info" />
+
+        <RelativeLayout
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/view_margin_15">
+
+
+            <!--<ImageView-->
+                <!--android:id="@+id/btn_message_input"-->
+                <!--android:layout_width="@dimen/live_btn_size"-->
+                <!--android:layout_height="@dimen/live_btn_size"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@drawable/live_buttom_btn_comment" />-->
+
+
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/live_buttom_btn_share" />
+
+            <ImageView
+                android:id="@+id/iv_beauty"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_toLeftOf="@id/iv_share"
+                android:src="@drawable/live_buttom_btn_beauty" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_chat_msg"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="24dp"
+            android:scrollbars="none"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@id/tool_bar"
+            android:cacheColorHint="#00000000"
+            android:scrollbarStyle="outsideOverlay"
+            android:stackFromBottom="true"
+            android:transcriptMode="normal"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

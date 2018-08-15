@@ -1,0 +1,177 @@
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+ext {
+
+    //Android
+    androidBuildToolsVersion = '27.0.3'
+    androidMinSdkVersion = 15
+    androidTargetSdkVersion = 27
+    androidCompileSdkVersion = 27
+    designVersion = '27.1.0'
+    cardviewVersion = '27.1.0'
+
+    //Libraries
+
+    appcompatv7Version = '27.1.0'
+    constraintVersion = '1.0.2'
+    daggerVersion = '2.14.1'
+    butterKnifeVersion = '8.8.1'
+    recyclerViewVersion = '27.1.0'
+    rxJavaVersion = '2.1.10'
+    rxAndroidVersion = '2.0.2'
+    rxLifecycleVersion = '2.2.1'
+    rxBindingVersion = '2.1.1'
+    rxPermissionsVersion = '0.9.5@aar'
+    javaxAnnotationVersion = '1.0'
+    javaxInjectVersion = '1'
+    gsonVersion = '2.8.2'
+    retrofitVersion = '2.3.0'
+    androidAnnotationsVersion = '27.1.0'
+    glideVersion = '4.6.1'
+    lottieVersion = '2.0.0'
+    roomVersion = '1.0.0'
+    stateViewVersion = '1.3.4'
+    immersionBarVersion = '2.3.0'
+    pagerBottomTabStripVersion = '2.2.5'
+    recyclerAdapterVersion = '2.9.38'
+    dividerItemDecorationVersion = '2.0'
+    magicIndicatorVersion = '1.5.0'
+    glideTransformationsVersion = '3.2.0'
+    titleBarVersion = '1.0.8@aar'
+    circleImageViewCodeVersion = '2.2.0'
+    bannerVersion = '1.4.10'
+    ctiaoCodeVersion = '0.4.4'
+    flexibledividerVersion = '1.4.0'
+    multidexVersion = '1.0.0'
+    rxrelayVersion = '2.0.0'
+    materialDialogVersion='0.9.6.0'
+    smartRefreshLayoutVersion='1.1.0-alpha-5'
+
+    //Testing
+    robolectricVersion = '3.1.1'
+    jUnitVersion = '4.12'
+    assertJVersion = '1.7.1'
+    mockitoVersion = '1.9.5'
+    dexmakerVersion = '1.0'
+    espressoVersion = '3.0.1'
+    testingSupportLibVersion = '0.1'
+    runnerVersion = '1.0.1'
+
+    //Development
+    leakCanaryVersion = '1.5.1'
+    timberVersion = '4.6.1'
+    utilsCodeVersion = '1.13.10'
+    lubanVersion='1.1.3'
+
+
+    presentationDependencies = [
+            appcompat             : "com.android.support:appcompat-v7:${appcompatv7Version}",
+            constraintLayout      : "com.android.support.constraint:constraint-layout:${constraintVersion}",
+            recyclerView          : "com.android.support:recyclerview-v7:${recyclerViewVersion}",
+            design                : "com.android.support:design:${designVersion}",
+            cardview              : "com.android.support:cardview-v7:${cardviewVersion}",
+            butterKnife           : "com.jakewharton:butterknife:${butterKnifeVersion}",
+            butterKnifeCompiler   : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+            rxBinding             : "com.jakewharton.rxbinding2:rxbinding:${rxBindingVersion}",
+            rxPermissions         : "com.tbruyelle.rxpermissions2:rxpermissions:${rxPermissionsVersion}",
+            rxLifecycle           : "com.trello.rxlifecycle2:rxlifecycle-components:${rxLifecycleVersion}",
+            rxLifecycleandroid    : "com.trello.rxlifecycle2:rxlifecycle-android-lifecycle:${rxLifecycleVersion}",
+            rxLifecyclenavi       : "com.trello.rxlifecycle2:rxlifecycle-navi:${rxLifecycleVersion}",
+            rxrelay               :"com.jakewharton.rxrelay2:rxrelay:${rxrelayVersion}",
+
+
+            javaxAnnotation       : "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            glide                 : "com.github.bumptech.glide:glide:${glideVersion}",
+            glideCompiler         : "com.github.bumptech.glide:compiler:${glideVersion}",
+            glideokHttpIntegration: "com.github.bumptech.glide:okhttp3-integration:${glideVersion}",
+            lottie                : "com.airbnb.android:lottie:${lottieVersion}",
+
+            daggerCompiler        : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger                : "com.google.dagger:dagger:${daggerVersion}",
+            daggerAndroid         : "com.google.dagger:dagger-android:${daggerVersion}",
+            daggerAndroidprocessor: "com.google.dagger:dagger-android-processor:${daggerVersion}",
+            daggerAndroidSupport  : "com.google.dagger:dagger-android-support:${daggerVersion}",
+
+            layoutStateView       : "com.github.nukc.stateview:library:${stateViewVersion}",
+            immersionBar          : "com.gyf.barlibrary:barlibrary:${immersionBarVersion}",
+            pagerBottomTabStrip   : "me.majiajie:pager-bottom-tab-strip:${pagerBottomTabStripVersion}",
+            recyclerAdapter       : "com.github.CymChad:BaseRecyclerViewAdapterHelper:${recyclerAdapterVersion}",
+            dividerItemDecoration : "com.yanyusong.y_divideritemdecoration:y_divideritemdecoration:${dividerItemDecorationVersion}",
+            magicIndicator        : "com.github.hackware1993:MagicIndicator:${magicIndicatorVersion}",
+            glideTransformations  : "jp.wasabeef:glide-transformations:${glideTransformationsVersion}",
+            titleBar              : "cn.bingoogolapple:bga-titlebar:${titleBarVersion}",
+            circleImageview       : "de.hdodenhof:circleimageview:${circleImageViewCodeVersion}",
+            banner                : "com.youth.banner:banner:${bannerVersion}",
+            ctiao                 : "com.github.ctiao:dfm:${ctiaoCodeVersion}",
+            multidex              : "com.android.support:multidex:${multidexVersion}",
+            flexibledivider       : "com.yqritc:recyclerview-flexibledivider:${flexibledividerVersion}",
+            materialDialog         : "com.afollestad.material-dialogs:commons:${materialDialogVersion}",
+            smartRefreshLayout         : "com.scwang.smartrefresh:SmartRefreshLayout:${smartRefreshLayoutVersion}",
+
+
+    ]
+
+    presentationTestDependencies = [
+            mockito          : "org.mockito:mockito-core:${mockitoVersion}",
+            dexmaker         : "com.google.dexmaker:dexmaker:${dexmakerVersion}",
+            dexmakerMockito  : "com.google.dexmaker:dexmaker-mockito:${dexmakerVersion}",
+            espresso         : "com.android.support.test.espresso:espresso-core:${espressoVersion}",
+            testingSupportLib: "com.android.support.test:testing-support-lib:${testingSupportLibVersion}",
+            runner           : "com.android.support.test:runner:${runnerVersion}",
+    ]
+
+    domainDependencies = [
+
+
+            javaxAnnotation: "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject    : "javax.inject:javax.inject:${javaxInjectVersion}",
+            rxJava         : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+    ]
+
+    domainTestDependencies = [
+            junit  : "junit:junit:${jUnitVersion}",
+            mockito: "org.mockito:mockito-core:${mockitoVersion}",
+            assertj: "org.assertj:assertj-core:${assertJVersion}"
+    ]
+
+    dataDependencies = [
+            gson                  : "com.google.code.gson:gson:${gsonVersion}",
+            retrofit              : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitConverterGson : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            retrofitAdapterRxjava2: "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+
+            daggerCompiler        : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger                : "com.google.dagger:dagger:${daggerVersion}",
+            daggerAndroid         : "com.google.dagger:dagger-android:${daggerVersion}",
+            daggerAndroidprocessor: "com.google.dagger:dagger-android-processor:${daggerVersion}",
+            daggerAndroidSupport  : "com.google.dagger:dagger-android-support:${daggerVersion}",
+
+            room                  : "android.arch.persistence.room:runtime:${roomVersion}",
+            roomCompiler          : "android.arch.persistence.room:compiler:${roomVersion}",
+            rxJava                : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            rxAndroid             : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            javaxAnnotation       : "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject           : "javax.inject:javax.inject:${javaxInjectVersion}",
+            androidAnnotations    : "com.android.support:support-annotations:${androidAnnotationsVersion}",
+    ]
+
+    dataTestDependencies = [
+            junit      : "junit:junit:${jUnitVersion}",
+            assertj    : "org.assertj:assertj-core:${assertJVersion}",
+            mockito    : "org.mockito:mockito-core:${mockitoVersion}",
+            robolectric: "org.robolectric:robolectric:${robolectricVersion}",
+    ]
+
+    developmentDependencies = [
+            timber           : "com.jakewharton.timber:timber:${timberVersion}",
+            debugLeakCanary  : "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}",
+            releaseLeakCanary: "com.squareup.leakcanary:leakcanary-android-no-op:${leakCanaryVersion}",
+            utilsCode        : "com.blankj:utilcode:${utilsCodeVersion}",
+            luban        : "top.zibin:Luban:${lubanVersion}",
+
+    ]
+}

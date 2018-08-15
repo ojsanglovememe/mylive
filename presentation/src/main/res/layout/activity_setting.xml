@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.src.isec.mvp.view.implement.activity.SettingActivity">
+
+    <include layout="@layout/include_activity_title_bar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_binding"
+                style="@style/widget_setting_item_bg_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_binding_title"
+                    style="@style/widget_text_view_black_style"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/ic_login_phone_black"
+                    android:drawablePadding="@dimen/view_margin_10"
+                    android:textColor="@color/colorGray"
+                    tools:text="@string/real_name_auth" />
+
+                <TextView
+                    android:id="@+id/tv_binding"
+                    style="@style/widget_text_view_black_style"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="@dimen/view_margin_10"
+                    android:drawableRight="@drawable/ic_arrows_right_2"
+                    android:text="@string/change_binding"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_exit_login"
+                style="@style/widget_text_view_black_bg_style"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                android:gravity="center"
+                android:text="@string/btn_exit_login"
+                android:textColor="@color/colorRed" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

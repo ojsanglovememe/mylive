@@ -1,0 +1,135 @@
+apply plugin: 'com.android.application'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration.getAt("androidCompileSdkVersion")
+    buildToolsVersion globalConfiguration.getAt("androidBuildToolsVersion")
+
+    defaultConfig {
+        minSdkVersion globalConfiguration.getAt("androidMinSdkVersion")
+        targetSdkVersion globalConfiguration.getAt("androidTargetSdkVersion")
+
+
+        applicationId globalConfiguration.getAt("androidApplicationId")
+
+        versionCode globalConfiguration.getAt("androidVersionCode")
+        versionName globalConfiguration.getAt("androidVersionName")
+        testInstrumentationRunner globalConfiguration.getAt("testInstrumentationRunner")
+        multiDexEnabled = true
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a"
+        }
+    }
+
+
+    signingConfigs {
+        debug {
+            storeFile file('../buildsystem/iseclivedebug.jks')
+            storePassword 'hhxxttxs'
+            keyAlias 'isec'
+            keyPassword 'hhxxttxs'
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+            buildConfigField "String", "DOMAIN", "\"http://192.168.88.200:8001/api/\""
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled false
+            buildConfigField "String", "DOMAIN", "\"http://192.168.88.200:8001/api/\""
+            signingConfig signingConfigs.debug
+        }
+    }
+    dexOptions {
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+//导入aar文件，需要先建立本地仓库
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    def presentationDependencies = rootProject.ext.presentationDependencies
+    def presentationTestDependencies = rootProject.ext.presentationTestDependencies
+    def developmentDependencies = rootProject.ext.developmentDependencies
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'src/main/jniLibs')
+    //ZMCert_SDK芝麻认证
+    implementation(name: 'ZMCert_SDK', ext: 'aar')
+    //live
+    implementation(name: 'LiteAVSDK_Professional', ext: 'aar')
+    //matisse
+    implementation(name: 'matisse_release', ext: 'aar')
+    //dex
+    implementation presentationDependencies.multidex
+    //appcompat
+    implementation presentationDependencies.appcompat
+    //ui
+    implementation presentationDependencies.constraintLayout
+    implementation presentationDependencies.recyclerView
+    implementation presentationDependencies.design
+    implementation presentationDependencies.cardview
+    implementation presentationDependencies.ctiao
+    implementation presentationDependencies.flexibledivider
+    //decoupling
+    annotationProcessor presentationDependencies.daggerCompiler
+    annotationProcessor presentationDependencies.daggerAndroidprocessor
+    implementation presentationDependencies.butterKnife
+    annotationProcessor presentationDependencies.butterKnifeCompiler
+    //asynchronous
+    implementation presentationDependencies.rxLifecycle
+    implementation presentationDependencies.rxBinding
+    //bus
+    implementation presentationDependencies.rxrelay
+    //picture
+    implementation presentationDependencies.glide
+    annotationProcessor presentationDependencies.glideCompiler
+    implementation presentationDependencies.glideokHttpIntegration
+    //StateView
+    implementation presentationDependencies.layoutStateView
+    implementation presentationDependencies.immersionBar
+    implementation presentationDependencies.pagerBottomTabStrip
+    implementation presentationDependencies.recyclerAdapter
+    implementation presentationDependencies.dividerItemDecoration
+    implementation presentationDependencies.magicIndicator
+    implementation presentationDependencies.glideTransformations
+    implementation presentationDependencies.titleBar
+    implementation presentationDependencies.circleImageview
+    implementation presentationDependencies.banner
+    implementation presentationDependencies.materialDialog
+    implementation presentationDependencies.smartRefreshLayout
+    //animation
+    implementation presentationDependencies.lottie
+    //Permissions
+    implementation presentationDependencies.rxPermissions
+    //utils
+    implementation developmentDependencies.timber
+    debugImplementation developmentDependencies.debugLeakCanary
+    releaseImplementation developmentDependencies.releaseLeakCanary
+    //test
+    androidTestImplementation presentationTestDependencies.mockito
+    androidTestImplementation presentationTestDependencies.dexmaker
+    androidTestImplementation presentationTestDependencies.dexmakerMockito
+    androidTestImplementation presentationTestDependencies.espresso
+    androidTestImplementation presentationTestDependencies.testingSupportLib
+    androidTestImplementation presentationTestDependencies.runner
+    implementation project(':data')
+    //商汤特效集成
+//    implementation project(':STMobileJNI')
+}

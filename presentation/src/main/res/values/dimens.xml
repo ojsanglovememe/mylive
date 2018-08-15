@@ -1,0 +1,92 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="status_bar_height">24dp</dimen>
+
+    <dimen name="title_bar_height">48dp</dimen>
+
+    <!-- Fonts' sizes -->
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_small_1">13sp</dimen>
+    <dimen name="basic_text_size">16sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    <dimen name="text_size_xlarge">28sp</dimen>
+
+    <dimen name="view_margin_1">1dp</dimen>
+    <dimen name="view_margin_1_5">1.5dp</dimen>
+    <dimen name="view_margin_2">2dp</dimen>
+    <dimen name="view_margin_3">3dp</dimen>
+    <dimen name="view_margin_4">4dp</dimen>
+    <dimen name="view_margin_5">5dp</dimen>
+    <dimen name="view_margin_6">6dp</dimen>
+    <dimen name="view_margin_7">7dp</dimen>
+    <dimen name="view_margin_8">8dp</dimen>
+    <dimen name="view_margin_10">10dp</dimen>
+    <dimen name="view_margin_11">11dp</dimen>
+    <dimen name="view_margin_12">12dp</dimen>
+    <dimen name="view_margin_14">14dp</dimen>
+    <dimen name="view_margin_15">15dp</dimen>
+    <dimen name="view_margin_16">16dp</dimen>
+    <dimen name="view_margin_20">20dp</dimen>
+    <dimen name="view_margin_25">25dp</dimen>
+    <dimen name="view_margin_40">40dp</dimen>
+    <dimen name="view_margin_48">48dp</dimen>
+    <dimen name="view_margin_50">50dp</dimen>
+    <dimen name="view_margin_58">58dp</dimen>
+
+    <dimen name="live_mask_radius">6dp</dimen>
+
+    <dimen name="list_view_divider_height">0.3dp</dimen>
+
+    <dimen name="shape_round_width">0.8dp</dimen>
+    <dimen name="shape_radius_size">5dp</dimen>
+
+    <!--直播封面高度-->
+    <dimen name="live_cover_height">167dp</dimen>
+
+
+    <!--h1-->
+    <dimen name="h1" >9sp</dimen>
+    <!--h2-->
+    <dimen name="h2">10sp</dimen>
+    <!--h3-->
+    <dimen name="h3">11sp</dimen>
+    <!--h4-->
+    <dimen name="h4">12sp</dimen>
+    <!--h5-->
+    <dimen name="h5">13sp</dimen>
+    <!--h6-->
+    <dimen name="h6">14sp</dimen>
+    <!--h7-->
+    <dimen name="h7">15sp</dimen>
+    <!--h8-->
+    <dimen name="h8">16sp</dimen>
+    <!--h9-->
+    <dimen name="h9">17sp</dimen>
+    <!--h10-->
+    <dimen name="h10">18sp</dimen>
+    <!--h11-->
+    <dimen name="h11">19sp</dimen>
+
+    <dimen name="h12">20sp</dimen>
+
+    <dimen name="live_btn_size">35dp</dimen>
+    <dimen name="small_radius">5dp</dimen>
+    <dimen name="title" >18sp</dimen>
+    <dimen name="subtitle">17sp</dimen>
+    <dimen name="main_content">16sp</dimen>
+    <dimen name="sub_content">14sp</dimen>
+    <dimen name="trivial_content">12sp</dimen>
+
+    <dimen name="rb_size">40dp</dimen>
+
+
+    <dimen name="middle_radius">10dp</dimen>
+    <dimen name="radius_20">20dp</dimen>
+
+
+    <dimen name="grid_expected_size">120dp</dimen>
+</resources>

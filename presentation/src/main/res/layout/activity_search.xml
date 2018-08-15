@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.src.isec.mvp.view.implement.activity.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_login_gradient_bg"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/title_top_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/view_margin_10"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/view_margin_10">
+
+            <com.src.isec.mvp.view.custom.ClearEditText
+                android:id="@+id/et_keyword"
+                style="@style/widget_edit_text_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_edit_search_bg"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="@dimen/view_margin_10"
+                android:hint="@string/hint_search"
+                android:paddingBottom="@dimen/view_margin_5"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:paddingTop="@dimen/view_margin_5"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_margin_25"
+                android:text="@string/btn_cancel"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/cl_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+</LinearLayout>

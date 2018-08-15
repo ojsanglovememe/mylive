@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.src.isec.mvp.view.implement.activity.EditPersonalInfoActivity">
+
+    <include layout="@layout/include_activity_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/ll_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_avatar"
+            style="@style/widget_setting_item_bg_style">
+
+            <TextView
+                style="@style/widget_text_view_black_style"
+                android:layout_centerVertical="true"
+                android:text="@string/avatar" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/view_margin_10"
+                android:layout_toLeftOf="@+id/iv_arrows"
+                app:civ_border_color="#302227"
+                app:civ_border_width="0.5dp"
+                tools:src="@drawable/ic_live_demo" />
+
+            <ImageView
+                android:id="@+id/iv_arrows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrows_right_2" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/include_under_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_nick_name"
+            style="@style/widget_setting_item_bg_style">
+
+            <TextView
+                style="@style/widget_text_view_black_style"
+                android:layout_centerVertical="true"
+                android:text="@string/nick_name" />
+
+            <TextView
+                android:id="@+id/tv_nick_name"
+                style="@style/widget_text_view_black_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/view_margin_10"
+                android:drawableRight="@drawable/ic_arrows_right_2"
+                android:textColor="@color/colorGray"
+                tools:text="@string/nick_name" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/include_under_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_gender"
+            style="@style/widget_setting_item_bg_style">
+
+            <TextView
+                style="@style/widget_text_view_black_style"
+                android:layout_centerVertical="true"
+                android:text="@string/gender" />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                style="@style/widget_text_view_black_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/view_margin_10"
+                android:drawableRight="@drawable/ic_arrows_right_2"
+                android:textColor="@color/colorGray"
+                tools:text="@string/nick_name" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_round_black_bg">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginTop="@dimen/shape_round_width"
+        android:layout_marginLeft="@dimen/shape_round_width"
+        android:layout_marginRight="@dimen/shape_round_width"
+        tools:src="@drawable/ic_live_demo" />
+
+    <View
+        android:id="@+id/v_under_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shape_round_width"
+        android:layout_below="@+id/iv_cover"
+        android:background="@color/colorRoundBlack" />
+
+    <TextView
+        android:id="@+id/tv_attention"
+        style="@style/widget_btn_attention_style"
+        android:layout_below="@+id/v_under_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/view_margin_10"
+        android:layout_marginTop="@dimen/view_margin_10"
+        android:text="@string/btn_attention" />
+
+</RelativeLayout>

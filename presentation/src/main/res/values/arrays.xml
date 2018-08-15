@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="home_top_tab_text">
+        <item>热门</item>
+        <item>附近</item>
+        <item>关注</item>
+    </string-array>
+
+    <string-array name="gender_text">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="take_photo_text">
+        <item>拍照</item>
+        <item>本地获取</item>
+    </string-array>
+
+</resources>

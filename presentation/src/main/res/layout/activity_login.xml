@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_login_gradient_bg"
+    android:orientation="vertical"
+    tools:context="com.src.isec.mvp.view.implement.activity.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/title_top_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <cn.bingoogolapple.titlebar.BGATitleBar
+            android:id="@+id/tb_title_bar"
+            style="@style/titleBar_style" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_login_bg" />
+
+    <LinearLayout
+        android:id="@+id/ll_input_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title_bar"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@drawable/shape_login_edit_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="55dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_phone"
+                style="@style/widget_edit_text_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_login_phone_gray"
+                android:drawablePadding="@dimen/view_margin_10"
+                android:hint="@string/input_phone"
+                android:inputType="phone"
+                android:padding="@dimen/view_margin_12" />
+
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/view_margin_10"
+                android:background="@drawable/btn_login_code"
+                android:enabled="false"
+                android:paddingBottom="@dimen/view_margin_10"
+                android:paddingLeft="@dimen/view_margin_12"
+                android:paddingRight="@dimen/view_margin_12"
+                android:paddingTop="@dimen/view_margin_10"
+                android:text="@string/btn_phone_code"
+                android:textColor="@color/btn_phone_code_color"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGrayLight" />
+
+        <EditText
+            android:id="@+id/et_code"
+            style="@style/widget_edit_text_style"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_login_lock_gray"
+            android:drawablePadding="@dimen/view_margin_10"
+            android:hint="@string/input_verification_code"
+            android:inputType="numberSigned"
+            android:minHeight="55dp"
+            android:padding="@dimen/view_margin_12" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_login"
+        style="@style/widget_text_btn_white_style"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll_input_bg"
+        android:background="@drawable/btn_login"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:enabled="false"
+        android:text="@string/btn_login" />
+
+</RelativeLayout>

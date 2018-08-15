@@ -1,0 +1,162 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+    <string name="app_name">IsecLive</string>
+
+    <string name="bottom_tab_menu_home">首页</string>
+    <string name="bottom_tab_menu_my">我的</string>
+
+    <string name="title_login_phone">手机号登录</string>
+
+    <string name="btn_wechat">微信</string>
+    <string name="btn_qq">QQ</string>
+    <string name="btn_weibo">新浪微博</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_phone">手机号</string>
+    <string name="btn_phone_code">获取验证码</string>
+    <string name="btn_real_name_auth">开始实名认证</string>
+    <string name="btn_submit">提交</string>
+    <string name="btn_step">下一步</string>
+    <string name="btn_change">确认替换</string>
+    <string name="btn_refresh">刷新</string>
+    <string name="btn_exit_login">退出登录</string>
+    <string name="btn_attention">+ 关注</string>
+    <string name="btn_attention_yes">已关注</string>
+
+    <string name="setting">设置</string>
+    <string name="real_name_auth">实名认证</string>
+    <string name="real_name_auth_prompt">根据相关法规，直播需要实名认证\n认证信息掌灵将会严格保密</string>
+    <string name="real_name_auth_prompt_live">根据相关规定，通过实名认证才能开启直播</string>
+    <string name="real_name_auth_success">实名认证已成功</string>
+    <string name="real_name">真实姓名</string>
+    <string name="phone_num">手机号码</string>
+    <string name="id_card">身份证号</string>
+    <string name="attention">%1$d\n关注</string>
+    <string name="fans">%1$d\n粉丝</string>
+    <string name="anchor_resting">主播休息中</string>
+    <string name="hot_recommend">热门推荐：</string>
+    <string name="guess_like">猜你喜欢：</string>
+    <string name="no_attention_tips">您还没有关注\n掌灵为您推荐在线热度主播</string>
+    <string name="avatar">头像</string>
+    <string name="nick_name">昵称</string>
+    <string name="input_nick_name">请输入昵称</string>
+    <string name="gender">性别</string>
+    <string name="gender_male">男</string>
+    <string name="gender_female">女</string>
+    <string name="edit_personal_info">编辑资料</string>
+    <string name="change_binding_phone">更换绑定手机号</string>
+    <string name="binding_phone_yes">已绑定手机号</string>
+    <string name="binding_phone">绑定手机号</string>
+    <string name="binding_success">绑定成功</string>
+    <string name="change_phone_tips">更换手机号后原手机号将不能登录</string>
+    <string name="change_binding">更换绑定</string>
+    <string name="login_loading">正在登录...</string>
+    <string name="network_error_refresh">网络不给力，点击刷新试试</string>
+    <string name="network_error_setting_network">当前网络不可用，请检查你的网络设置</string>
+    <string name="network_error_living">全世界都在等待你的直播</string>
+    <string name="click_avatar_login">点击头像登录</string>
+    <string name="sure_exit_login">确定要退出登录吗？</string>
+    <string name="phone_code_send_success">验证码发送成功，请注意查看!</string>
+    <string name="real_name_auth_yes">已认证</string>
+    <string name="real_name_auth_no">未认证</string>
+    <string name="live_online_num">%1$d人在线</string>
+    <string name="my_attention">我的关注</string>
+    <string name="my_fans">我的粉丝</string>
+    <string name="my_fans_empty_tips">您还没有粉丝，经常来直播就能积累到人气哦</string>
+    <string name="hint_search">请输入昵称/ID</string>
+    <string name="search_empty">对不起，没有找到“%1$s”</string>
+    <string name="user_id_num">ID：%1$s</string>
+    <string name="permission_request_denied">需要相应的权限</string>
+
+    <string name="input_real_name">请输入您的真实姓名</string>
+    <string name="input_phone_num">请输入您的手机号码</string>
+    <string name="input_id_card">请输入您的身份证号</string>
+    <string name="input_phone">请输入正确的手机号码</string>
+    <string name="input_new_phone">请输入新手机号码</string>
+    <string name="input_verification_code">请输入验证码</string>
+
+    <string name="vista_share_title">分享</string>
+    <string name="toast_please_install_weixin">您还没有安装微信，请先下载微信客户端！</string>
+    <string name="toast_please_install_qq">您还没有安装QQ，请先下载QQ客户端！</string>
+    <string name="toast_please_install_sina">您还没有安装微博，请先下载微博客户端！</string>
+    <string name="toast_no_share">暂时无法支持分享</string>
+    <string name="toast_share_success">分享成功</string>
+    <string name="toast_share_fail">分享失败</string>
+    <string name="toast_share_cancel">分享取消</string>
+    <string name="toast_login_success">登录成功</string>
+    <string name="toast_login_fail">登录失败</string>
+    <string name="toast_login_cancel">登录取消</string>
+
+
+    <string name="btn_take_photo">拍照</string>
+    <string name="btn_pic_photo">从手机相册选择</string>
+    <string name="btn_return_home">返回首页</string>
+    <string name="btn_return">返回</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_refuse">拒绝</string>
+    <string name="btn_agree">同意</string>
+    <string name="btn_sure">确定</string>
+    <string name="btn_close">关闭</string>
+    <!-- fragment publish -->
+    <string name="text_live_preview">发布直播</string>
+    <string name="publish_already_launch_avRoom">wait!</string>
+    <string name="publish_photo_take">拍照</string>
+    <string name="publish_photo_album">相册</string>
+    <string name="publish_need_photo_tips">从未发起过图片，请选择一张作为直播封面</string>
+    <string name="publish_wait_uploading">请等待封面上传完成</string>
+    <string name="publish_upload_success">上传封面成功</string>
+    <string name="publish_photo_make_sure_tips">请添加一张照片</string>
+    <string name="publish_photo_make_sure_title">请输入图片标题</string>
+    <string name="publish_create_room_failed">创建房间失败</string>
+    <string name="publish_upload_cover_failed">上传封面失败</string>
+    <string name="publish_photo_success">发布图片成功</string>
+    <string name="text_continue">继续</string>
+    <string name="text_publish">开始直播</string>
+    <string name="text_photo_preview">发布照片</string>
+    <string name="text_live_title_input">请输入直播标题</string>
+    <string name="text_photo_title_input">你的照片你做主</string>
+    <string name="text_live_open_lbs">开启位置</string>
+    <string name="text_live_close_lbs">不显示地理位置</string>
+    <string name="text_live_record_scr">启动录屏</string>
+    <string name="text_live_not_record_scr">不启动录屏</string>
+    <string name="text_live_location">正在定位中</string>
+    <string name="text_live_lbs_fail">定位失败</string>
+    <string name="text_live_lbs_unknown">不显示地理位置</string>
+    <string name="text_live_default_title">我的直播我做主</string>
+    <string name="text_start_push">开启推流</string>
+    <string name="text_start_screen_record">启动录屏</string>
+    <string name="text_record_info">开始录制后直播视频自动录制，并可以进行回放</string>
+    <string name="text_live_all_see">所有人可看</string>
+    <string name="text_live_share">同步到</string>
+    <string name="text_live">正在直播>></string>
+    <string name="text_live_add_title_tips">给你的直播设置一个满意的封面</string>
+    <string name="text_live_admire_limit">点赞过于频繁</string>
+    <string name="titel_is_too_long">标题有些长了哦，最多输入10个字</string>
+    <string name="title_is_no_empty">请输入直播标题</string>
+    <string name="no_perimisson">没有权限，无法开播，请前往设置界面打开权限</string>
+    <string name="no_net">当前网络环境不能发布直播</string>
+    <string name="activity_publish_beauty" tools:ignore="ExtraTranslation">美颜效果</string>
+    <string name="activity_publish_white">美白效果</string>
+
+    <!-- 直播页面 -->
+    <string name="empty_input">您还没有输入任何文字哦</string>
+    <string name="input_hint">说点什么吧</string>
+    <string name="live_share">分享到：</string>
+    <string name="live_share_cancel">取消</string>
+    <string name="live_attention_succ">关注成功</string>
+    <string name="live_attention_fail">关注失败</string>
+    <string name="live_unattention_succ">取消关注成功</string>
+    <string name="live_unattention_fail">取消关注失败</string>
+    <string name="live_joinroom_notify">进入了直播间</string>
+
+    <!-- 直播间错误信息 -->
+    <string name="ERROR_MSG_NOT_QCLOUD_LINK">"非腾讯云链接，若要放开限制请联系腾讯云商务团队"</string>
+    <string name="ERROR_RTMP_PLAY_FAILED">"视频流播放失败，Error:"</string>
+    <string name="ERROR_MSG_NET_DISCONNECTED">网络异常，请检查网络</string>
+    <string name="TIPS_MSG_STOP_PUSH">当前正在直播，是否退出直播？</string>
+    <string name="invite_dialog_tips">主播邀请您与他进行互动直播</string>
+    <string name="live_end_ask_tips">确定结束直播?</string>
+    <string name="live_end_tips">直播结束</string>
+    <string name="live_time_tips">直播时长</string>
+    <string name="live_members_tips">观看人数</string>
+    <string name="live_admires_tips">获赞数量</string>
+</resources>

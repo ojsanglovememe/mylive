@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.src.isec.mvp.view.implement.activity.ChangePhoneSubmitActivity">
+
+    <include layout="@layout/include_activity_title_bar" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        style="@style/widget_edit_text_style"
+        android:layout_marginLeft="@dimen/view_margin_20"
+        android:layout_marginRight="@dimen/view_margin_20"
+        android:layout_marginTop="@dimen/view_margin_25"
+        android:background="@drawable/shape_edit_gray_frame_bg"
+        android:hint="@string/input_new_phone"
+        android:padding="@dimen/view_margin_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_margin_20"
+        android:layout_marginRight="@dimen/view_margin_20"
+        android:layout_marginTop="@dimen/view_margin_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_code"
+            style="@style/widget_edit_text_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_edit_gray_frame_bg"
+            android:hint="@string/input_verification_code"
+            android:padding="@dimen/view_margin_10" />
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_margin_15"
+            android:background="@drawable/btn_change_phone_code"
+            android:enabled="false"
+            android:paddingBottom="@dimen/view_margin_10"
+            android:paddingLeft="@dimen/view_margin_12"
+            android:paddingRight="@dimen/view_margin_12"
+            android:paddingTop="@dimen/view_margin_10"
+            android:text="@string/btn_phone_code"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_change_phone_tips"
+        style="@style/widget_text_view_gray_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/view_margin_20"
+        android:text="@string/change_phone_tips"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_btn_change"
+        style="@style/widget_text_btn_purple_style"
+        android:layout_marginLeft="@dimen/view_margin_20"
+        android:layout_marginRight="@dimen/view_margin_20"
+        android:layout_marginTop="@dimen/view_margin_25"
+        android:text="@string/btn_change" />
+
+</LinearLayout>

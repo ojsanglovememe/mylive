@@ -1,0 +1,66 @@
+apply plugin: 'com.android.library'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration.getAt("androidCompileSdkVersion")
+
+
+
+    defaultConfig {
+        minSdkVersion globalConfiguration.getAt("androidMinSdkVersion")
+        targetSdkVersion globalConfiguration.getAt("androidTargetSdkVersion")
+        versionCode globalConfiguration.getAt("androidVersionCode")
+        versionName globalConfiguration.getAt("androidVersionName")
+        testInstrumentationRunner globalConfiguration.getAt("testInstrumentationRunner")
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    def dataDependencies = rootProject.ext.dataDependencies
+    def dataTestDependencies = rootProject.ext.dataTestDependencies
+    def developmentDependencies = rootProject.ext.developmentDependencies
+    compileOnly dataDependencies.javaxAnnotation
+    //repository
+    api dataDependencies.gson
+    api dataDependencies.retrofit
+    api dataDependencies.retrofitConverterGson
+    api dataDependencies.retrofitAdapterRxjava2
+    api dataDependencies.room
+    annotationProcessor dataDependencies.roomCompiler
+    //asynchronous
+    api dataDependencies.rxJava
+    api dataDependencies.rxAndroid
+    api dataDependencies.javaxInject
+    api dataDependencies.androidAnnotations
+
+    //decoupling
+    api dataDependencies.dagger
+    annotationProcessor dataDependencies.daggerCompiler
+    api dataDependencies.daggerAndroid
+    api dataDependencies.daggerAndroidSupport
+    annotationProcessor dataDependencies.daggerAndroidprocessor
+    //utils
+    api developmentDependencies.utilsCode
+    api developmentDependencies.timber
+    implementation developmentDependencies.luban
+
+    testImplementation dataTestDependencies.junit
+    testImplementation dataTestDependencies.assertj
+    testImplementation dataTestDependencies.mockito
+    testImplementation dataTestDependencies.robolectric
+    api project(':domain')
+}

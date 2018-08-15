@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="@dimen/h6"
+        android:textColor="@color/color_live_share_text"
+        android:text="@string/live_share"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/rg_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_share_circle"
+            android:layout_width="@dimen/rb_size"
+            android:layout_height="@dimen/rb_size"
+            android:button="@null"
+            android:background="@drawable/icon_share_circle_pressed"
+            android:layout_marginRight="15dp"
+            />
+
+        <RadioButton
+            android:layout_marginRight="15dp"
+            android:id="@+id/rb_share_qzone"
+            android:layout_width="@dimen/rb_size"
+            android:layout_height="@dimen/rb_size"
+            android:background="@drawable/icon_share_qzone_pressed"
+            android:button="@null"/>
+
+        <RadioButton
+            android:layout_marginRight="15dp"
+            android:id="@+id/rb_share_wb"
+            android:layout_width="@dimen/rb_size"
+            android:layout_height="@dimen/rb_size"
+            android:background="@drawable/icon_share_wb_pressed"
+            android:button="@null"/>
+
+        <RadioButton
+            android:layout_marginRight="15dp"
+            android:id="@+id/rb_share_wx"
+            android:layout_width="@dimen/rb_size"
+            android:layout_height="@dimen/rb_size"
+            android:background="@drawable/icon_share_wx_pressed"
+            android:button="@null"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_share_qq"
+            android:layout_width="@dimen/rb_size"
+            android:layout_height="@dimen/rb_size"
+            android:background="@drawable/icon_share_qq_pressed"
+            android:button="@null"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_live_share_cancel"
+        android:background="@drawable/btn_live_share_cancel"
+        android:text="@string/live_share_cancel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/h6"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="80dp"
+        android:layout_height="27dp"/>
+
+</LinearLayout>

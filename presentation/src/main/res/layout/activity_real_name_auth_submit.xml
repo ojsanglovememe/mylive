@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.src.isec.mvp.view.implement.activity.RealNameAuthSubmitActivity">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/include_activity_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff7dc"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:text="@string/real_name_auth_prompt_live"
+            android:textColor="#ff9933"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            style="@style/widget_setting_item_bg_style"
+            android:layout_marginTop="@dimen/view_margin_20"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/widget_text_view_black_style"
+                android:layout_marginRight="@dimen/view_margin_20"
+                android:text="@string/real_name" />
+
+            <EditText
+                android:id="@+id/et_real_name"
+                style="@style/widget_edit_text_style"
+                android:background="@null"
+                android:hint="@string/input_real_name" />
+
+        </LinearLayout>
+
+        <include layout="@layout/include_under_line" />
+
+        <LinearLayout
+            style="@style/widget_setting_item_bg_style"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/widget_text_view_black_style"
+                android:layout_marginRight="@dimen/view_margin_20"
+                android:text="@string/phone_num" />
+
+            <EditText
+                android:id="@+id/et_phone_num"
+                style="@style/widget_edit_text_style"
+                android:background="@null"
+                android:hint="@string/input_phone_num"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <include layout="@layout/include_under_line" />
+
+        <LinearLayout
+            style="@style/widget_setting_item_bg_style"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/widget_text_view_black_style"
+                android:layout_marginRight="@dimen/view_margin_20"
+                android:text="@string/id_card" />
+
+            <EditText
+                android:id="@+id/et_id_card"
+                style="@style/widget_edit_text_style"
+                android:background="@null"
+                android:hint="@string/input_id_card" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_btn_submit"
+        style="@style/widget_text_btn_purple_style"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:text="@string/btn_submit" />
+
+</RelativeLayout>

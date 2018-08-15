@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFf45082</color>
+    <color name="colorPrimaryDark">#FFf45082</color>
+    <color name="colorAccent">#FFf45082</color>
+
+    <color name="background_white_color">#FFFFFFFF</color>
+    <color name="background_gray_color">#f3f1f3</color>
+
+    <color name="list_item_bg_pressed">#77d9d9d9</color>
+    <color name="list_item_bg_normal">#ffffffff</color>
+
+    <!--红色-->
+    <color name="colorRed">#FF3333</color>
+    <!--文字白色-->
+    <color name="colorTextWhite">#FFFFFF</color>
+
+    <color name="colorBlack">#FF302227</color>
+    <!--灰色-->
+    <color name="colorGray">#FFBDBDBD</color>
+    <!--深灰色-->
+    <color name="colorGrayDark">#FF818181</color>
+    <!--浅灰色-->
+    <color name="colorGrayLight">#FFE0E0E0</color>
+    <!--紫色-->
+    <color name="colorPurple">#FFbe30dd</color>
+
+    <color name="colorHomeTabText">#FFD9D9D9</color>
+    <color name="colorHomeTabTextSelect">#FFFF2D55</color>
+
+    <color name="colorRoundBlack">#FF2f2231</color>
+
+    <!--标题栏渐变-->
+    <color name="colorGradientLight">#FFf96e6d</color>
+    <!--标题栏渐变-->
+    <color name="colorGradientDark">#FFf45082</color>
+
+    <!--首页顶部Tab文字投影-->
+    <color name="colorTabProjection">#70b1212d</color>
+
+
+    <!--背景色-->
+    <color name="colorBackground">#F5F5F5</color>
+    <!--文字G1-->
+    <color name="colorTextG1">#CCCCCC</color>
+    <!--文字G2-->
+    <color name="colorTextG2">#999999</color>
+    <!--文字G3-->
+    <color name="colorTextG3">#666666</color>
+    <!--文字G4-->
+    <color name="colorTextG4">#333333</color>
+    <!--文字black-->
+    <color name="colorTextBlack">#000000</color>
+    <!--gray1-->
+    <color name="colorGray1">#F0F0F0</color>
+    <!--light gray-->
+    <color name="colorLightGray">#E6E6E6</color>
+    <!--gray2-->
+    <color name="colorGray2">#DCDCDC</color>
+    <!--gray3-->
+    <color name="colorGray3">#C8C8C8</color>
+    <!--gray4-->
+    <color name="colorGray4">#787878</color>
+    <!--gray5-->
+    <color name="colorGray5">#505050</color>
+    <!--gray6-->
+    <color name="colorGray6">#141414</color>
+    <!--gray7-->
+    <color name="colorGray7">#D8D8D8</color>
+    <!--gray8-->
+    <color name="colorGray8">#181818</color>
+
+    <color name="colorPurple1">#b130dd</color>
+    <color name="color_818181">#818181</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <!--green-->
+    <color name="colorGreen">#0accac</color>
+    <color name="colorTransparentGray">#88ffffff</color>
+
+    <color name="color_input_dialog_background">#b4ffffff</color>
+    <color name="colorTransparentBlack">#44777777</color>
+    <color name="transparent">#00000000</color>
+    <color name="c9">#777777</color>
+    <color name="color_send_name">#ff2d55</color>
+    <color name="color_live_title">#fefdfd</color>
+    <color name="color_chat_background">#33000000</color>
+    <color name="colorDarkTransparentGray">#a4000000</color>
+    <color name="color_gray_tran">#99000000</color>
+    <color name="color_live_share_cancel">#8e5197</color>
+    <color name="color_live_share_text">#302227</color>
+    <color name="color_live_end">#be30dd</color>
+    <color name="color_live_end_bg">#b3000000</color>
+    <color name="color_live_end_text">#fefdfd</color>
+</resources>

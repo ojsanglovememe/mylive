@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_login_gradient_bg"
+    tools:context="com.src.isec.mvp.view.implement.activity.LoginModeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/view_margin_58"
+        android:paddingRight="@dimen/view_margin_58">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_login_logo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_margin_48"
+            android:layout_marginTop="@dimen/view_margin_12"
+            android:src="@drawable/ic_login_font_logo" />
+
+        <TextView
+            android:id="@+id/btn_wechat"
+            style="@style/widget_text_btn_white_style"
+            android:text="@string/btn_wechat" />
+
+        <TextView
+            android:id="@+id/btn_qq"
+            style="@style/widget_text_btn_white_style"
+            android:layout_marginBottom="@dimen/view_margin_15"
+            android:layout_marginTop="@dimen/view_margin_15"
+            android:text="@string/btn_qq" />
+
+        <TextView
+            android:id="@+id/btn_weibo"
+            style="@style/widget_text_btn_white_style"
+            android:text="@string/btn_weibo" />
+
+        <TextView
+            android:id="@+id/btn_phone"
+            style="@style/widget_text_btn_white_style"
+            android:layout_marginTop="@dimen/view_margin_15"
+            android:text="@string/btn_phone" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

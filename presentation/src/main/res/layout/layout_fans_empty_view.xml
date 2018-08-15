@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_fans_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/view_margin_20"
+        android:layout_marginRight="@dimen/view_margin_20"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_fans_empty" />
+
+    <TextView
+        style="@style/widget_text_view_black_style"
+        android:layout_below="@+id/iv_fans_empty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/view_margin_20"
+        android:layout_marginRight="@dimen/view_margin_20"
+        android:layout_marginTop="45dp"
+        android:text="@string/my_fans_empty_tips" />
+
+</RelativeLayout>

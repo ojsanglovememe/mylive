@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/live_cover_height">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/live_cover_height" />
+
+    <View
+        android:id="@+id/v_mask_bg"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_live_item_mask_bg"
+        android:layout_height="@dimen/live_cover_height"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_live_title_bg"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/view_margin_5"
+        android:paddingLeft="@dimen/view_margin_10"
+        android:paddingRight="@dimen/view_margin_10"
+        android:paddingTop="@dimen/view_margin_5"
+        android:textColor="@color/background_white_color"
+        tools:text="电竞游戏开始了" />
+
+    <TextView
+        android:id="@+id/tv_people_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shape_live_people_name_bg"
+        android:drawableLeft="@drawable/ic_grass_green_dot"
+        android:drawablePadding="5dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/view_margin_4"
+        android:paddingLeft="@dimen/view_margin_6"
+        android:paddingRight="@dimen/view_margin_6"
+        android:paddingTop="@dimen/view_margin_4"
+        android:textColor="@color/background_white_color"
+        android:textSize="@dimen/text_size_micro"
+        tools:text="1.6万人在线" />
+
+</RelativeLayout>

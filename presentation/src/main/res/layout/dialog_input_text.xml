@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_outside_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_inputdlg_view"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/chat_input_bg"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/ll_danmu_area"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_danmu"
+                android:layout_width="26dp"
+                android:layout_marginLeft="16dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/danmu_btn_off" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/ll_danmu_area"
+            android:layout_toLeftOf="@+id/ll_icon_area"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:background="@drawable/chat_edit_bg"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_confirm_area"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/chat_btn_send"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_input_message"
+            android:layout_toRightOf="@+id/ll_danmu_area"
+            android:layout_toLeftOf="@+id/ll_icon_area"
+            android:hint="@string/input_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text"
+            android:maxLength="150"
+            android:textSize="@dimen/h7"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="44dp"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:id="@+id/ll_icon_area"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent">
+        <Button
+            android:id="@+id/icon_btn"
+            android:layout_width="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/chat_btn_mook" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

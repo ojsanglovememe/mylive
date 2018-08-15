@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff7dc"
+        android:drawableRight="@drawable/ic_network_no_arrow"
+        android:gravity="center"
+        android:paddingBottom="@dimen/view_margin_12"
+        android:paddingLeft="@dimen/view_margin_15"
+        android:paddingRight="@dimen/view_margin_15"
+        android:paddingTop="@dimen/view_margin_12"
+        android:text="@string/network_error_setting_network"
+        android:textColor="#ff9933"
+        android:textSize="14sp" />
+
+    <TextView
+        style="@style/widget_text_view_black_style"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/view_margin_15"
+        android:drawableTop="@drawable/ic_network_no"
+        android:text="@string/network_error_living" />
+
+</FrameLayout>

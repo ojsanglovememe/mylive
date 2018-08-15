@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/color_live_end_bg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/h12"
+        android:textColor="@color/color_live_end_text"
+        android:text="@string/live_end_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <Button
+        android:id="@+id/btn_live_end"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="@string/btn_sure"
+        android:textColor="@color/white"
+        android:textSize="@dimen/h7"
+        android:background="@drawable/btn_live_end_bg"
+        android:layout_width="245dp"
+        android:layout_height="46dp"/>
+
+</RelativeLayout>

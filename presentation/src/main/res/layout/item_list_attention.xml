@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_white_color"
+        android:paddingBottom="@dimen/view_margin_8"
+        android:paddingLeft="@dimen/view_margin_15"
+        android:paddingRight="@dimen/view_margin_15"
+        android:paddingTop="@dimen/view_margin_8">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="@dimen/view_margin_15"
+            tools:src="@drawable/ic_default_avatar" />
+
+        <LinearLayout
+            android:id="@+id/ll_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/view_margin_10"
+            android:layout_toLeftOf="@+id/tv_attention"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nick_name"
+                style="@style/widget_text_view_black_style"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tools:text="抹茶有毒抹茶有毒抹茶有毒抹茶有毒抹茶有毒抹茶有毒抹茶有毒" />
+
+            <TextView
+                android:id="@+id/tv_id"
+                style="@style/widget_text_view_black_style"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tools:text="抹茶有毒" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_attention"
+            style="@style/widget_btn_attention_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/btn_attention" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/include_under_line" />
+
+</LinearLayout>

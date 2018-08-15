@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.src.isec.mvp.view.implement.activity.MainActivity">
+
+    <com.src.isec.mvp.view.custom.NoTouchViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/include_under_line" />
+
+    <View
+        android:id="@+id/include_under_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/tab"
+        android:background="@color/colorGrayLight">
+
+    </View>
+
+    <me.majiajie.pagerbottomtabstrip.PageNavigationView
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_white_color" />
+
+    <ImageView
+        android:id="@+id/iv_add_live"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/view_margin_20"
+        android:src="@drawable/ic_home_bottom_add"/>
+
+</RelativeLayout>
